@@ -50,5 +50,10 @@ namespace RegForm.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        public void Register()
+        {
+
+        }
     }
 }
