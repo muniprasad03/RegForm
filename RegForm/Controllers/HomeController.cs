@@ -41,5 +41,12 @@ namespace RegForm.Controllers
             reg.SaveChanges();
             return View();
         }
+
+        public ActionResult List()
+        {
+            RegDbContext entities = new RegDbContext();
+            return View(from customer in entities.registerModels.Take(10)
+                        select customer);
+        }
     }
 }
